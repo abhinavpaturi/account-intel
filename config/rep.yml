@@ -1,0 +1,22 @@
+# rep.yml — WHO is doing the outbound. Used for email signatures + voice calibration.
+
+rep:
+  name: "Abhinav P"
+  title: "Business Development Representative"
+  email: "apaturi0318@gmail.com"
+  linkedin: "linkedin.com/in/abhinav-p-4a8045101"
+  location: "Toronto, ON"
+  phone: ""   # left blank by design — never auto-insert a phone number into outreach
+
+# Voice calibration for generated emails/openers. Short, direct, specific. No corporate filler.
+voice:
+  do:
+    - "Lead with a specific signal about THEM, not about us"
+    - "Short sentences. One idea per line."
+    - "Name the mechanic (Global Adjustment, Top 5 peaks) — it signals you know the market"
+    - "One clear ask per email"
+  avoid:
+    - "passionate about / synergies / cutting-edge / leverage / circle back"
+    - "Three-paragraph openers"
+    - "Generic 'I'd love to connect' with no reason"
+    - "Made-up metrics or names — if a fact isn't verified, mark it [unverified]"

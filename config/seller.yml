@@ -1,0 +1,84 @@
+# seller.yml — WHO is selling, and the domain knowledge that makes the dossiers sound expert.
+# Swap this file to point account-intel at a different employer/product.
+# Currently configured for: Edgecom Energy (BDR target, May 2026).
+
+company:
+  name: "Edgecom Energy"
+  one_liner: "AI-driven energy optimization that cuts large consumers' electricity costs and emissions in real time."
+  website: "https://edgecom.ai"
+  hq: "Toronto, ON, Canada"
+  stage: "Series A"
+  flags: ["Certified B Corp", "ABB Startup Challenge winner", "CIX Top 20"]
+  founders:
+    - "Behdad Bahrami (CEO — Energy Innovator of the Year 2024, AEE)"
+    - "Mehdi Parvizi (co-founder)"
+  notable_clients: ["Microsoft", "Johnson Controls", "Sobeys", "AWS"]
+  partners: ["Bell", "ABB", "REIN Hydro"]
+
+# The product pillars. Each generated pain-hypothesis must map to ONE of these.
+product_pillars:
+  - key: "real_time_optimization"
+    name: "Real-time AI energy optimization (the 'virtual energy manager')"
+    sells_against: "Manual, reactive energy management; no one watching load minute-to-minute."
+  - key: "demand_response"
+    name: "Demand response / peak curtailment"
+    sells_against: "Paying premium rates during system peaks; no signal to curtail in time."
+  - key: "der_management"
+    name: "Distributed energy resource (DER) management"
+    sells_against: "On-site generation, batteries, and EV load running uncoordinated."
+  - key: "grid_interactive"
+    name: "Grid-interactive buildings + EV infrastructure optimization"
+    sells_against: "Buildings and EV charging that can't flex with grid signals or price."
+  - key: "cost_emissions"
+    name: "Energy cost + emissions reduction reporting"
+    sells_against: "ESG commitments with no measurable, audited path to hit them."
+
+# THE domain wedge — Ontario's Global Adjustment / ICI. This is what makes openers credible.
+market_mechanics:
+  jurisdiction: "Ontario (IESO)"
+  the_mechanic: >
+    Large Ontario consumers on Class A pay Global Adjustment (GA) based on their share of
+    the province's TOP 5 coincident peak demand hours over a May 1–Apr 30 base period
+    (the Industrial Conservation Initiative, ICI). Predict those 5 peaks, curtail during
+    them, and GA charges drop materially the following year. GA is often the LARGEST line
+    on a big consumer's bill — bigger than the energy itself.
+  the_2026_hook: >
+    The 14% Class A GA relief in place 2021–2025 is phasing out starting 2026 under the
+    'Energy for Generations' plan. Legacy renewable-contract costs are returning to bills,
+    so Class A exposure is about to climb — predicting/curtailing the Top 5 peaks matters
+    MORE this year than last.
+  terms_to_use: ["Global Adjustment", "Class A", "ICI", "coincident peak", "Peak Demand Factor", "peak shaving", "curtailment"]
+  proof_sources:
+    - "edgecom.ai/blog (Edgecom publishes on ICI 2026 + GA — link the relevant post)"
+    - "ieso.ca Peak Tracker (the live coincident-peak signal Edgecom helps customers act on)"
+
+# Ideal Customer Profile — who to point the tool at.
+icp:
+  segments:
+    - "Data centers / colocation (large, peaky, 24/7 load)"
+    - "Industrial & manufacturing facilities"
+    - "Chemical / process plants"
+    - "Commercial real estate (large portfolios)"
+    - "Greenhouses (Ontario controlled-environment ag — huge lighting/HVAC load)"
+    - "Fleet operators / EV infrastructure"
+    - "Energy providers / LDCs"
+  qualifiers:
+    - "Class A or near-Class-A peak demand (≥1 MW, ideally ≥5 MW) in Ontario/IESO"
+    - "Public ESG / net-zero / decarbonization commitment (gives the emissions angle)"
+    - "Expansion / new-build news (load is growing → GA exposure growing)"
+  disqualifiers:
+    - "Small load, residential, or fully behind a flat regulated tariff with no GA exposure"
+
+# Value-prop one-liners the rep can deploy, by segment.
+value_props:
+  default: "Cut your Global Adjustment by predicting and curtailing the Top 5 Ontario peaks — automatically, in real time."
+  data_center: "Your load is 24/7 and peaky; even modest curtailment during the 5 coincident peaks moves your GA bill by six figures."
+  greenhouse: "Lighting and HVAC are your biggest controllable loads — flexing them around the Top 5 peaks protects margin without hurting yield."
+  industrial: "We watch the grid so your plant doesn't have to — curtail at the right 5 hours, keep production planning intact."
+  esg: "One platform that cuts the energy bill AND gives you an audited emissions number for the ESG report."
+
+# Buyer titles to hunt for (the decision-maker map).
+buyer_personas:
+  economic: ["CFO", "VP Finance", "COO"]
+  champion: ["Director/VP Facilities", "Director of Operations", "Plant Manager", "Head of Sustainability / ESG", "Energy Manager"]
+  technical: ["Facilities Engineering", "SCADA/Controls", "Real Estate / Infrastructure"]

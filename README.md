@@ -3,7 +3,7 @@
 **Turn a company name into a sales-ready outbound packet in one command.**
 
 ```
-/account-intel Cologix
+/account-intel <company name or url>
 ```
 
 → a complete dossier: company snapshot, energy signals, a real decision-maker map, a

@@ -15,7 +15,7 @@ agent runtime and uses live web research — no API key, no scraping farm, no ma
 
 ---
 
-## Why I built thisssssssssssssssssss
+## Why I built this
 
 I'm interviewing for a BDR seat at **Edgecom Energy**. Instead of just telling them I run
 AI-assisted outbound, I built something I'd actually use. Also to show I belong at an AI-first company.
@@ -32,6 +32,8 @@ with. **That's my proposed first-week deliverable: 10 of these on Edgecom's top 
 ## What it produces
 
 See real, unedited runs: **[Cologix](reports/samples/cologix-2026-05-29.md)** (data center) · **[Cadillac Fairview](reports/samples/cadillac-fairview-2026-05-30.md)** (commercial real estate)
+
+Every run saves two files to **`~/Desktop/Account Intel Reports/`**: the markdown above, plus a polished, self-contained **HTML report** (open in any browser, print to PDF to share) — with the `verified` / `unverified` / `estimate` tags rendered as color-coded pills.
 
 A taste — the generated cold-call opener for Cologix (a Toronto data-center operator):
 
@@ -50,6 +52,7 @@ vs. a 100%-by-2030 goal) — and maps all of it to a specific Edgecom product pi
 ```
 account-intel/
 ├── SKILL.md              # entry point — /account-intel <company>
+├── render.mjs            # dossier markdown → polished, self-contained HTML
 ├── config/
 │   ├── seller.yml        # who's selling: product pillars, ICP, Ontario GA mechanics  ← the brain
 │   └── rep.yml           # the rep + voice calibration
@@ -58,8 +61,7 @@ account-intel/
 │   └── intel.md          # the research → synthesis playbook (8 steps)
 ├── templates/
 │   └── dossier.md        # output shape
-└── reports/              # generated dossiers land here
-    └── samples/          # committed example runs
+└── reports/samples/      # committed example runs — live runs save to ~/Desktop
 ```
 
 1. Reads `config/seller.yml` — the domain knowledge that makes output expert.
@@ -67,7 +69,8 @@ account-intel/
    decision-makers → pain hypothesis → opener → discovery → email sequence.
 3. Researches live with web search + fetch (and optionally LinkedIn via the Chrome
    extension, using your own logged-in session).
-4. Renders the dossier and saves it under `reports/`.
+4. Renders a polished markdown **and** a styled, self-contained HTML report to
+   `~/Desktop/Account Intel Reports/`, then opens it (print-to-PDF ready).
 
 ## The discipline: truth over completeness
 

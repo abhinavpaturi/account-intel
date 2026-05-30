@@ -68,7 +68,16 @@ phone). Suggested cadence:
 - **Email 2 (Day 3):** a proof angle or the 2026 GA change + a different ask (worth a look?).
 - **Email 3 (Day 7):** short break-up / one-line value + easy yes-or-no.
 
-## Step 8 — Render + save
+## Step 8 — Render, save, open
 
-Fill `templates/dossier.md`. Save to `reports/{company-slug}-{YYYY-MM-DD}.md`. End with a
-**Confidence & gaps** note: what's verified, what the rep must confirm before calling.
+1. Fill `templates/dossier.md`. End with a **Confidence & gaps** note: what's verified and
+   what the rep must confirm before calling.
+2. Save the markdown to the user's Desktop output folder:
+   **`~/Desktop/Account Intel Reports/{company-slug}-{YYYY-MM-DD}.md`** — resolve `~` to the
+   home dir and create the folder if needed. Live runs land on the Desktop, never in the
+   repo; only the curated `reports/samples/` are tracked.
+3. Render the polished, self-contained HTML beside it:
+   `node ~/.claude/skills/account-intel/render.mjs "<that .md path>"`
+   → writes `{company-slug}-{YYYY-MM-DD}.html` in the same folder (the
+   `verified`/`unverified`/`estimate` tags become color-coded pills).
+4. `open` the `.html` so the user sees the finished dossier (it's print-to-PDF ready).

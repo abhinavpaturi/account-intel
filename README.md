@@ -18,7 +18,7 @@ agent runtime and uses live web research — no API key, no scraping farm, no ma
 ## Why I built this
 
 I'm interviewing for a BDR seat at **Edgecom Energy**. Instead of just telling them I run
-AI-assisted outbound, I built something I'd actually use. Also to show I belong at an ai first company.
+AI-assisted outbound, I built something I'd actually use. Also to show I belong at an AI-first company.
 
 The hard part of outbound isn't volume, it's walking into a call already sounding like you
 understand the prospect's world. For Edgecom that world is the **Ontario energy market**:
@@ -31,7 +31,7 @@ with. **That's my proposed first-week deliverable: 10 of these on Edgecom's top 
 
 ## What it produces
 
-See a real, unedited run: **[reports/samples/cologix-2026-05-29.md](reports/samples/cologix-2026-05-29.md)**
+See real, unedited runs: **[Cologix](reports/samples/cologix-2026-05-29.md)** (data center) · **[Cadillac Fairview](reports/samples/cadillac-fairview-2026-05-30.md)** (commercial real estate)
 
 A taste — the generated cold-call opener for Cologix (a Toronto data-center operator):
 
@@ -59,7 +59,7 @@ account-intel/
 ├── templates/
 │   └── dossier.md        # output shape
 └── reports/              # generated dossiers land here
-    └── samples/          # committed example run
+    └── samples/          # committed example runs
 ```
 
 1. Reads `config/seller.yml` — the domain knowledge that makes output expert.

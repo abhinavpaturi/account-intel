@@ -18,9 +18,9 @@ agent runtime and uses live web research — no API key, no scraping farm, no ma
 ## Why I built this
 
 I'm interviewing for a BDR seat at **Edgecom Energy**. Instead of just telling them I run
-AI-assisted outbound, I built the tool I'd use in the seat.
+AI-assisted outbound, I built something I'd actually use. Also to show I belong at an ai first company.
 
-The hard part of outbound isn't volume — it's walking into a call already sounding like you
+The hard part of outbound isn't volume, it's walking into a call already sounding like you
 understand the prospect's world. For Edgecom that world is the **Ontario energy market**:
 Global Adjustment, the Top 5 coincident peaks, the Industrial Conservation Initiative, and
 the Class A relief that's phasing out in 2026. This agent bakes that domain knowledge into
